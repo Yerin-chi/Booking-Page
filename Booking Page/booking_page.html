@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" type="text/css" href="booking_page.css">
+
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/img/Logo.png" alt="Roz Vasquez Photography">
+    </div>    
+
+    <div class="main">
+        
+        <form>
+            <h2>Client Details</h2>
+            <!-- Input Name -->
+            <div class="form_1">
+                <label for="name">Name:</label><br>
+                <input type="text" id="fname" name="fname"  placeholder="First Name">
+                <input type="text" id="mname" name="mname"  placeholder="Middle Initial">
+                <input type="text" id="lname" name="lname"  placeholder="Last Name">
+                <input type="text" id="sname" name="sname"  placeholder="Suffix">
+            </div>
+            <!-- Input Name - End -->
+            
+            <br><br>
+
+            <!-- Input Email and Phone -->
+            <div class="form_2">
+                <label for="contact">Contact:</label><br>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="phone" name="phone" placeholder="Phone">
+            </div>
+            <!-- Input Email and Phone - End -->
+            <br><br>
+
+            <!-- Input Address -->
+            <div class="form_3">
+                <label for="address">Address:</label><br>
+                <input type="text" id="street" name="street"  placeholder="House No. / Street">
+                <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code">
+                <br>
+            </div>
+            
+            <div class="form_4">
+                <!-- Barangay -->
+                <select name="barangay" id="barangay" required>
+                    <option value="" disabled selected hidden >Barangay...</option>
+                    <option value="blank"></option>
+                    <option value="alawihao">Alawihao</option>
+                    <option value="Awitan">Awitan</option>
+                    <option value="bagasbas">Bagasbas</option>
+                    <option value="ilaod">Brgy I (Ilaod)</option>
+                    <option value="pasig">Brgy II (Pasig)</option>
+                    <option value="iraya">Brgy III (Iraya)</option>
+    
+                    <option value="mantagbac">Brgy IV (Mantagbac)</option>
+                    <option value="pandan">Brgy V (Pandan)</option>
+                    <option value="centro">Brgy VI (Centro)</option>
+                    <option value="diego">Brgy VII (Diego Linan)</option>
+                    <option value="salcedo">Brgy VIII (Salcedo)</option>
+                    <option value="bibirao">Bibirao</option>
+    
+                    <option value="borabod">Borabod</option>
+                    <option value="calasgasan">Calasgasan</option>
+                    <option value="camambugan">Camambugan</option>
+                    <option value="cobangbang">Cobangbang</option>
+                    <option value="dogongan">Dogongan</option>
+                    <option value="gahonon">Gahonon</option>
+    
+                    <option value="gubay">Gubat</option>
+                    <option value="lagon">Lag-on</option>
+                    <option value="magang">Magang</option>
+                    <option value="mambalite">Mambalite</option>
+                    <option value="pamorangon">Pamorangon</option>
+                    <option value="mancruz">Mancruz</option>
+                    <option value="sanisidro">San Isidro</option>
+                </select>
+    
+                <!-- City -->
+                <select name="city" id="city" required> 
+                    <option value="" disabled selected hidden>City...</option>
+                    <option value="blank"></option>
+                    <option value="basud">Basud</option>
+                    <option value="capalonga">Capalonga</option>
+                    <option value="daet">Daet</option>
+                    <option value="jpang">Jose Panganiban</option>
+    
+                    <option value="labo">Labo</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="paracale">Paracale</option>
+                    <option value="sanlorenzoruiz">San Lorenzo Ruiz</option>
+    
+                    <option value="sanvicente">San Vicente</option>
+                    <option value="santaelena">Santa Elena</option>
+                    <option value="talisay">Talisay</option>
+                    <option value="vinzons">Vinzons</option>
+                </select>
+    
+                <!--Province -->
+                <select name="province" id="province" required>
+                    <option value="" disabled selected hidden >Province...</option>
+                    <option value="blank"></option>
+                    <option value="albay">Albay</option>
+                    <option value="camnorte">Camarines Norte</option>
+                    <option value="camsur">Camarines Sur</option>
+                    <option value="catanduanes">Catanduanes</option>
+                    <option value="masbate">Masbate</option>
+                    <option value="sorsogon">Sorsogon</option>
+                </select>
+            </div>
+            <!-- Input Address - End -->
+            <br><br>
+            
+            <!-- Session -->
+            <h2>Session Details</h2>
+            <div class="form_5">
+                <label for="session">Type of Session:</label>
+                <select name="session" id="session">
+                    <option value=""></option>
+                    <option value="agency">Agency</option>
+                    <option value="maternity">Maternity</option>
+                    <option value="newborn">Newborn</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="portraits">Portraits</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <label for="location">Location:</label> 
+                <input type="text" id="location" name="location" size="50"><br>
+            </div>
+            <div class="form_6">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            
+
+            <div class="form_7">
+                <label for="photos">Number of Photos:</label> 
+                <input type="text" id="photos" name="photos" size="50">
+                <label for="people">Number of People:</label> 
+                <input type="text" id="people" name="people" size="50">
+            </div>
+
+
+
+            <br>
+            <div class="form_8">
+                <label for="details">Additional Details:</label><br>
+                <textarea class="details" rows="5" id="details"></textarea>
+            </div>
+            <br><br>
+
+
+            <!-- Contract Agreement Section -->
+            <div class="c_form">
+                <hr>
+                <h2>Client Portrait Agreement/ Contrat & Copyright</h2>
+                <hr>
+                <p>
+                    Portrait Agreement & Model Release: I have read and agree to the following statement: I commission Roz Vasquez Photography, the 
+                    photography, to photograph myself and/or my underage children. I hereby grant Roz Vasquez Photography and his legal representatives
+                    and assigns, the unrestricted right to use and publish photographs of myself, family, and/or child(ren), or which myself, family, 
+                    and / or children will be included for editorial, trade, advertising, and any other purpose, and in any manner or medium; to alter the 
+                    same without restriction; and to coyright the same. I hereby release Roz Vasquez Photography and his legal representatives and assigns from 
+                    all claims and liability relating to said photographs. The photographer respects the client wishes to not share any photos on social media
+                    or website if requested. The Client shall reimburse Photographer for any additional costs the Photographer may incur for travel, meals,
+                    parking, and other reasonable cost necessary to the performance of these services.
+                </p>
+            </div>
+            
+
+            <input type="radio" id="agree" name="agree" value="agree">
+            <label for="agree">I AGREE</label><br>
+            <input type="radio" id="disagree" name="disagree" value="disagree">
+            <label for="disagree">I DO NOT AGREE</label><br><br>
+
+            <!-- Signature Box -->
+
+            <form class="signature-pad-form" action="#" method="POST">
+
+                <p class="signature">Signature: </p><br>
+                <canvas class="signature-pad"></canvas>
+                <p><a href="#" class="clear-button">Clear</a></p>
+
+            </form>
+            <script src="app.js"></script>
+
+
+
+            <!-- Submit Button -->
+            <br><br>
+            <button class="submit-button" type="submit" value="Submit">Submit</button>
+          </form>
+    </div>
+</body>
+</html>

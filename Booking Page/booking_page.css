@@ -1,0 +1,215 @@
+body {
+    background-image: linear-gradient(black, white);
+}
+
+.header {
+    background-color: #395B64;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #395B64;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.header .logo {
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    margin: auto;
+    width: 80%;
+    font-family: Arial;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding:20px;
+}
+
+/* Name Form */
+
+input[type=text], select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=time], select {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Name: First, Middle, Last Suffix */
+.main .form_1 input{
+    display: inline-block;
+    width: 24%;
+}
+
+
+/* Email & Phone */
+.main .form_2 input {
+    display: inline-block;
+    width: 48.2%;
+}
+
+/* Address */
+.main .form_3 input {
+    display: inline-block;
+    width: 48.2%;
+}
+.main .form_4 select {
+    display: inline-block;
+    width: 32%;
+}
+.maim .form_4 select:invalid{
+    color: gray;
+}
+.maim .form_4 option{
+    color: black;
+}
+
+
+
+/* Session Details */
+
+.main .form_5 select{ /* Session Type */
+    display: block;
+    width: 40%;
+    float: left;
+}
+.main .form_5 input{ /* Location */
+    display: block;
+    width: 40%;
+}
+.main .form_5 label {
+    display: block;
+    width: 40%;
+
+}
+
+
+/* Date & time*/
+.main .form_6 label{
+    display: block;
+    width: 250%;
+}
+.main .form_6 input{
+    width: 250%;
+}
+.main .form_6{
+    float: left;
+    margin-right: 250px;
+}
+
+
+/* No. People & Photos*/
+.main .form_7 input{
+    display: block;
+    width: 50%;
+
+}
+.main .form_7 label{
+    display: block;
+    width: 50%;
+}
+
+/* Additional Details */
+.main .form_8 textarea{
+    width: 99%;
+    display: block;
+}
+
+/* Contract */
+.c_form p {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.4;
+}
+
+
+/*Signature box*/
+:root {
+    --primary-color: #000;
+}
+
+
+.main .signature-pad-form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+
+}
+.signature {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.main .signature-pad {
+    cursor: url(img/pen.png) 1 26, pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+}
+.main .clear-button {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 100px;
+
+    background-color: #395B64;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main .clear-button:hover {
+    background-color: #A5C9CA;
+  }
+  
+
+
+@media (pointer: coarse) {
+    body {
+      overflow: hidden; /* Needed to prevent the vertical scroll on touch devices */
+    }
+}
